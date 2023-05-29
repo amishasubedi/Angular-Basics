@@ -3,7 +3,16 @@
 <!-- <input type="text" [(ngModel)]="name">
 <p> {{ name }}</p> -->
 
-<h3>I am in the App Component!</h3>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>I am in the App Component!</h3>
+      <hr>
+      <app-servers></app-servers>
+    </div>
+  </div>
+</div>
+
 
 <!--How an Angular App gets loaded and started?
     - The main.ts file gets executed first where we bootstrap an angular application (AppModule) and we pass this module as an argument.
@@ -12,6 +21,3 @@
     to have some html code and a template attached to it. So Angular app starts with the content of html code.
     - 
 -->
-
-<hr>
-<app-servers></app-servers>
