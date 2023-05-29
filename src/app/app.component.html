@@ -1,4 +1,14 @@
 <!-- It is used to create two-way data binding between a form control element and a component property. It allows you to synchronize the value of an input element with a property in the component and vice versa. -->
 
-<input type="text" [(ngModel)]="name">
-<p> {{ name }}</p>
+<!-- <input type="text" [(ngModel)]="name">
+<p> {{ name }}</p> -->
+
+<h3>I am in the App Component!</h3>
+
+<!--How an Angular App gets loaded and started?
+    - The main.ts file gets executed first where we bootstrap an angular application (AppModule) and we pass this module as an argument.
+    In this module (app.module.ts), we tell angular there is AppComponent which you should know when you try to start yourself. ANgular now analyzes the AppComponent (app.component.ts) and reads the setup we pass here and therefore knows this selector app-route. Now, angular is
+    able to handle app-route in the index.html file and it knows that in the selector it should insert the AppComponent. The AppComponent happens 
+    to have some html code and a template attached to it. So Angular app starts with the content of html code.
+    - 
+-->
