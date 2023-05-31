@@ -1,8 +1,19 @@
+<label>
+    Server Name
+</label>
+
+<!--$event is a reserved variable name you can use in the template when using event binding,
+     $event is basically data emitted with that event-->
+<input type="text" class="form-control" (input)="onUpdateServerName($event)">
+<p>{{serverName}}</p>
+
 <!--property binding-->
-<button class="btn btn primary" [disabled]="!allowNewServer"> Add Server</button>
+<button class="btn btn primary" [disabled]="!allowNewServer" (click)=onAddServer()> Add Server</button>
 
 <!--String interpolation-->
-<p>{{ allowNewServer }}</p>
+<!-- <p>{{ allowNewServer }}</p> -->
+
+<p> {{ serverCreationStatus }}</p>
 
 <app-server></app-server>
 <app-server></app-server>
@@ -12,4 +23,8 @@
     - if you want to change the property of Html element or a directive, use property binding
 
     DON'T MIX PROPERTY BINDING AND STRING INTERPOLATION
+
+    Event Binding starts with (). 
+    Property Binding starts with [].
+    String Interpolation starts with {{}}
 -->
