@@ -1,2 +1,15 @@
+<!--property binding-->
+<button class="btn btn primary" [disabled]="!allowNewServer"> Add Server</button>
+
+<!--String interpolation-->
+<p>{{ allowNewServer }}</p>
+
 <app-server></app-server>
 <app-server></app-server>
+
+<!--When to use String interpolation vs data binding?
+    - when you're just printing something in browser, use string interpolation
+    - if you want to change the property of Html element or a directive, use property binding
+
+    DON'T MIX PROPERTY BINDING AND STRING INTERPOLATION
+-->
