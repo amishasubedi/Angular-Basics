@@ -27,8 +27,7 @@
 </ng-template>
 
 
-<app-server></app-server>
-<app-server></app-server>
+<app-server *ngFor="let server of servers"></app-server>
 
 <!--Assignment 2-->
 <!-- <input type="text" class="form-control" [(ngModel)]='userName'>
@@ -59,6 +58,9 @@
     elements. They only change the element they were placed on)
 
     Let's say I want to change the background of the browswer depending on the serverStatus.
+
+    Another built in directive: ngFor
+
 
 
 
